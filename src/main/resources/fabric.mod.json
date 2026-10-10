@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"id": "realms_notification_nuker",
+	"version": "${version}",
+	"name": "RealmsNotificationNuker",
+	"description": "A lightweight Mod that removes the annoying permanent Realms notification dot in the main menu.",
+	"authors": [
+		"DZultra"
+	],
+	"contact": {
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/realms_notification_nuker/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.dzultra.realms_notification_nuker.RealmsNotificationNuker"
+		],
+		"client": [
+			"net.dzultra.realms_notification_nuker.RealmsNotificationNukerClient"
+		]
+	},
+	"mixins": [
+		"realms_notification_nuker.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
